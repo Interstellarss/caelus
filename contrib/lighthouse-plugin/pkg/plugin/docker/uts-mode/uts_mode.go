@@ -23,8 +23,8 @@ import (
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
 	"k8s.io/klog"
 
-	"github.com/tencent/lighthouse-plugin/pkg/plugin"
-	"github.com/tencent/lighthouse-plugin/pkg/plugin/docker"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker"
 )
 
 /*

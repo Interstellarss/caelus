@@ -28,8 +28,8 @@ import (
 	"github.com/google/uuid"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/tencent/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
-	"github.com/tencent/lighthouse/pkg/test"
+	"github.com/Interstellarss/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
+	"github.com/Interstellarss/lighthouse/pkg/test"
 )
 
 func TestHookManagerPreHook(t *testing.T) {

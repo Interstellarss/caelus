@@ -16,7 +16,7 @@
 package offline
 
 import (
-	"github.com/tencent/lighthouse-plugin/pkg/plugin"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin"
 )
 
 const (

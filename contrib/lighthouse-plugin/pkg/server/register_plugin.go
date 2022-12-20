@@ -17,11 +17,11 @@ package server
 
 import (
 	// init offline mutator
-	_ "github.com/tencent/lighthouse-plugin/pkg/plugin/docker/offline"
+	_ "github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker/offline"
 	// init pid limit mutator
-	_ "github.com/tencent/lighthouse-plugin/pkg/plugin/docker/pid-limit"
+	_ "github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker/pid-limit"
 	// init storage opts mutator
-	_ "github.com/tencent/lighthouse-plugin/pkg/plugin/docker/storage-opts"
+	_ "github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker/storage-opts"
 	// init uts mode mutator
-	_ "github.com/tencent/lighthouse-plugin/pkg/plugin/docker/uts-mode"
+	_ "github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker/uts-mode"
 )

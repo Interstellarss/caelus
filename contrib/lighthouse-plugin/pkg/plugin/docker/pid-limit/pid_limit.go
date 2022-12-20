@@ -20,8 +20,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/tencent/lighthouse-plugin/pkg/plugin"
-	"github.com/tencent/lighthouse-plugin/pkg/plugin/docker"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker"
 
 	"github.com/docker/docker/runconfig"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"

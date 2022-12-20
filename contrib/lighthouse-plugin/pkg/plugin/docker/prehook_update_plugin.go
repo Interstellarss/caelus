@@ -30,8 +30,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog"
 
-	"github.com/tencent/lighthouse-plugin/pkg/plugin"
-	"github.com/tencent/lighthouse-plugin/pkg/plugin/util"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin/util"
 )
 
 func init() {

@@ -47,6 +47,7 @@ var (
 )
 
 const (
+	//need to modify for containerd?
 	ContainerTypeLabelKey       = "io.kubernetes.docker.type"
 	ContainerTypeLabelContainer = "container"
 	ContainerSandBoxKey         = "io.kubernetes.sandbox.id"
@@ -57,6 +58,9 @@ const (
 	// sandbox container will add prefix with value "annotation."
 	PodAutoAnnotationPrefix = "annotation."
 	PodAnnotationPrefix     = PodAutoAnnotationPrefix + "mixer.kubernetes.io/"
+
+	//Annotation for Function
+	PodFunctionName = "dl.inference.function.type"
 )
 
 const (
@@ -70,6 +74,7 @@ const (
 	DockerPidsLimit featuregate.Feature = "DockerPidsLimit"
 )
 
+//modify for containerd
 // feature gate support
 var defaultFeatureGate = map[featuregate.Feature]featuregate.FeatureSpec{
 	DockerStorageOption: {Default: false, PreRelease: featuregate.Alpha},

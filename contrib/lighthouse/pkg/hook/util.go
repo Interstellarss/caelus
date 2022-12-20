@@ -20,7 +20,7 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/tencent/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
+	"github.com/Interstellarss/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
 )
 
 var json = jsoniter.Config{

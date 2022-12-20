@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
-	componentconfigv1alpha1 "github.com/tencent/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
+	componentconfigv1alpha1 "github.com/Interstellarss/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
 )
 
 var Scheme = runtime.NewScheme()

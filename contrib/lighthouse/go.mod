@@ -1,4 +1,4 @@
-module github.com/tencent/lighthouse
+module github.com/Interstellarss/lighthouse
 
 go 1.14
 

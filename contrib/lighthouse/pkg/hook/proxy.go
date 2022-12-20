@@ -21,8 +21,8 @@ import (
 	"github.com/docker/go-connections/sockets"
 	"k8s.io/klog"
 
-	"github.com/tencent/lighthouse/pkg/httputil"
-	"github.com/tencent/lighthouse/pkg/util"
+	"github.com/Interstellarss/lighthouse/pkg/httputil"
+	"github.com/Interstellarss/lighthouse/pkg/util"
 )
 
 type reverseProxy struct {

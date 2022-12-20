@@ -18,7 +18,7 @@ package docker
 import (
 	gjson "encoding/json"
 	"fmt"
-	"github.com/tencent/lighthouse-plugin/pkg/plugin/util"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin/util"
 
 	dockerapi "github.com/docker/docker/client"
 	"github.com/evanphx/json-patch"

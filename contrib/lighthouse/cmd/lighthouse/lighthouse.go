@@ -25,7 +25,7 @@ import (
 	cliflag "k8s.io/component-base/cli/flag"
 	"k8s.io/component-base/logs"
 
-	"github.com/tencent/lighthouse/cmd/lighthouse/app"
+	"github.com/Interstellarss/lighthouse/cmd/lighthouse/app"
 )
 
 // This is the main function for the server

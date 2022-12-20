@@ -28,7 +28,7 @@ import (
 	cliflag "k8s.io/component-base/cli/flag"
 	"k8s.io/klog"
 
-	"github.com/tencent/lighthouse-plugin/pkg/server"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/server"
 )
 
 // Options group server options

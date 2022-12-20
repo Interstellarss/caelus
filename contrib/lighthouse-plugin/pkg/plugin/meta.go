@@ -23,6 +23,9 @@ type PodMetadata struct {
 	Namespace     string
 	ContainerName string
 	ContainerType string
+
+	//FunctionName
+	FunctionName string
 }
 
 // GetPodMetadata get pod info from labels

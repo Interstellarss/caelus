@@ -23,8 +23,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tencent/lighthouse-plugin/pkg/plugin"
-	"github.com/tencent/lighthouse-plugin/pkg/plugin/docker"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin"
+	"github.com/Interstellarss/lighthouse-plugin/pkg/plugin/docker"
 
 	dockertypes "github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"

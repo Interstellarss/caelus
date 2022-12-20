@@ -26,10 +26,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/klog"
 
-	"github.com/tencent/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
-	"github.com/tencent/lighthouse/pkg/hook"
-	"github.com/tencent/lighthouse/pkg/scheme"
-	"github.com/tencent/lighthouse/pkg/util"
+	"github.com/Interstellarss/lighthouse/pkg/apis/componentconfig.lighthouse.io/v1alpha1"
+	"github.com/Interstellarss/lighthouse/pkg/hook"
+	"github.com/Interstellarss/lighthouse/pkg/scheme"
+	"github.com/Interstellarss/lighthouse/pkg/util"
 )
 
 // Options group server options
