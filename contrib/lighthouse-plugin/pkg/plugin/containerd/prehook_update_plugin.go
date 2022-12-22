@@ -169,6 +169,8 @@ func (p *preHookContainerdUpdatePlugin) generateContainerData(conName string, w 
 		return
 	}
 
+	//containerInfo.
+
 	klog.V(5).Infof("Get pod from container labels")
 
 	metadata = plugin.GetPodMetadata(Clabels)

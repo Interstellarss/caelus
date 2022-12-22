@@ -37,6 +37,7 @@ func (p *mountOpt) handle(
 	}
 
 	//TODO: change this to json?
+	//is is correct to use the sandbox id?
 	containerSpec, err := toolKits.ContainerdClient.LoadContainer(context.TODO(), metadata.SandBoxID)
 
 	if err != nil {
@@ -45,15 +46,7 @@ func (p *mountOpt) handle(
 
 	//info , err := containerSpec.Info()
 
-	//mount new directory for the container :)
-	//testing for mound
-
-	//task, err := containerSpec.NewTask(context.Background(), cio.NewCreator(cio.WithStdio))
-
-	//task, err := containerSpec
-
-	//containerSpec.NewTask()
-
+	//TODO:
 	out, err := exec.Command("/bin/bash", "mount.sh", containerSpec.ID(), metadata.FunctionName).Output()
 	if err != nil {
 		log.Fatal(err)

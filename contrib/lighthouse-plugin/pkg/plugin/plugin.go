@@ -28,7 +28,7 @@ import (
 type Plugin interface {
 	Method() string
 	Path() string
-	Handler(client kubernetes.Interface, dockerEndpoint, dockerVersion string) http.HandlerFunc
+	Handler(client kubernetes.Interface, containerdEndpoint, containerdVersion string) http.HandlerFunc
 	SetIgnored(IgnoreNamespacesFunc)
 }
 
@@ -47,7 +47,7 @@ var (
 )
 
 const (
-	//need to modify for containerd?
+	//TODO:need to modify for containerd?
 	ContainerTypeLabelKey       = "io.kubernetes.docker.type"
 	ContainerTypeLabelContainer = "container"
 	ContainerSandBoxKey         = "io.kubernetes.sandbox.id"
@@ -65,22 +65,29 @@ const (
 
 const (
 	// docker storage option
-	DockerStorageOption featuregate.Feature = "DockerStorageOption"
+	//DockerStorageOption featuregate.Feature = "DockerStorageOption"
 	// UTS mode support, create a new UTS namespace different with host namespace
-	DockerUTSMode featuregate.Feature = "DockerUTSMode"
+	//DockerUTSMode featuregate.Feature = "DockerUTSMode"
 	// Offline support, create cgroup path different with kubernetes
-	DockerOfflineMutate featuregate.Feature = "DockerOfflineMutate"
+	//DockerOfflineMutate featuregate.Feature = "DockerOfflineMutate"
 	// limit pod pid number
-	DockerPidsLimit featuregate.Feature = "DockerPidsLimit"
+	//DockerPidsLimit featuregate.Feature = "DockerPidsLimit"
+
+	//Containerd mount different function code & model
+	ContainerdMountOpt featuregate.Feature = "ContainerdMountOpt"
+	//Containerd pause & un-pause pod inside & outside the pool
+	ContainerdPauseOpt featuregate.Feature = "ContainerdPauseOpt"
 )
 
 //modify for containerd
 // feature gate support
 var defaultFeatureGate = map[featuregate.Feature]featuregate.FeatureSpec{
-	DockerStorageOption: {Default: false, PreRelease: featuregate.Alpha},
-	DockerUTSMode:       {Default: false, PreRelease: featuregate.Alpha},
-	DockerOfflineMutate: {Default: false, PreRelease: featuregate.Alpha},
-	DockerPidsLimit:     {Default: false, PreRelease: featuregate.Alpha},
+	//DockerStorageOption: {Default: false, PreRelease: featuregate.Alpha},
+	//DockerUTSMode:       {Default: false, PreRelease: featuregate.Alpha},
+	//DockerOfflineMutate: {Default: false, PreRelease: featuregate.Alpha},
+	//DockerPidsLimit:     {Default: false, PreRelease: featuregate.Alpha},
+	ContainerdMountOpt: {Default: false, PreRelease: featuregate.Alpha},
+	ContainerdPauseOpt: {Default: false, PreRelease: featuregate.Alpha},
 }
 
 func init() {
