@@ -3,7 +3,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-PACKAGE_PREFIX="github.com/tencent"
+PACKAGE_PREFIX="github.com/Interstellarss"
 PACKAGE_NAME="lighthouse-plugin"
 PACKAGE="${PACKAGE_PREFIX}/${PACKAGE_NAME}"
 OUTPUT_PATH="${BASE_DIR}/_output"

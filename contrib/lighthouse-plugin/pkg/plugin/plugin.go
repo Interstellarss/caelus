@@ -65,13 +65,13 @@ const (
 
 const (
 	// docker storage option
-	//DockerStorageOption featuregate.Feature = "DockerStorageOption"
+	DockerStorageOption featuregate.Feature = "DockerStorageOption"
 	// UTS mode support, create a new UTS namespace different with host namespace
-	//DockerUTSMode featuregate.Feature = "DockerUTSMode"
+	DockerUTSMode featuregate.Feature = "DockerUTSMode"
 	// Offline support, create cgroup path different with kubernetes
-	//DockerOfflineMutate featuregate.Feature = "DockerOfflineMutate"
+	DockerOfflineMutate featuregate.Feature = "DockerOfflineMutate"
 	// limit pod pid number
-	//DockerPidsLimit featuregate.Feature = "DockerPidsLimit"
+	DockerPidsLimit featuregate.Feature = "DockerPidsLimit"
 
 	//Containerd mount different function code & model
 	ContainerdMountOpt featuregate.Feature = "ContainerdMountOpt"
