@@ -72,6 +72,7 @@ func NewPluginServerCommand() *cobra.Command {
 	return cmd
 }
 
+//TODO：change to containerd
 // NewOptions return option instance
 func NewOptions() *Options {
 	// fixed version, you may adapt it to your target version
