@@ -25,4 +25,4 @@ FROM alpine:3.9
 
 COPY --from=build /go/src/github.com/Interstellarss/lighthouse/bin/lighthouse /usr/bin/lighthouse
 
-CMD ["plugin-server", "-alsologtostderr", "-v=5"]
+CMD ["lighthouse", "-alsologtostderr", "-v=5"]
