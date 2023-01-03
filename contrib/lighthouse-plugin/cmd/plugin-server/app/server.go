@@ -19,7 +19,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/mYmNeo/version/verflag"
+	//"github.com/mYmNeo/version/verflag"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
@@ -52,7 +52,7 @@ func NewPluginServerCommand() *cobra.Command {
 		Long: "The plugin server provides hook request send to runtime backend",
 		Run: func(cmd *cobra.Command, args []string) {
 			// version flag supported, like --version""
-			verflag.PrintAndExitIfRequested()
+			//verflag.PrintAndExitIfRequested()
 			cmd.Flags().VisitAll(func(flag *pflag.Flag) {
 				klog.V(1).Infof("FLAG: --%s=%q", flag.Name, flag.Value)
 			})
